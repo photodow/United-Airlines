@@ -1,0 +1,241 @@
+body {
+	background: #004a9b;
+	color: #343434;
+	padding: 0;
+	margin: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body.pass {
+	background: #eaeaea;
+}
+
+header {
+	padding: 25px;
+	margin: 0;
+}
+
+section {
+	margin: 0;
+}
+
+body.pass header {
+	background: #004a9b;
+	padding: 12px 0 12px 25px;
+}
+
+body.pass {
+	padding: 0;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
+}
+
+h1 img {
+	width: 100%;
+	display: block;
+}
+
+h2 {
+	color: #004a9b;
+	margin: 0;
+	margin-bottom: 12px;
+}
+
+body.pass header h1 {
+	width: 150px;
+}
+
+.login {
+	color: #a3b4d1;
+	margin: 25px;
+}
+
+.login label {
+	font-weight: normal;
+	margin-bottom: 12px;
+	display: block;
+}
+
+.login label > span {
+	display: block;
+	font-size: 1.2em;
+	margin-bottom: 5px;
+}
+
+.login input {
+	border: 0;
+	width: 100%;
+}
+
+.login button {
+	width: 100%;
+	border: 0;
+	background: #ffb308;
+	color: #fff;
+	text-shadow: 0 1px 2px rgba(0,0,0,.2);
+	cursor: pointer;
+}
+
+.login button:active {
+	background: #ffcb63; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffcb63 0%, #ffb308 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffcb63), color-stop(100%,#ffb308)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffcb63 0%,#ffb308 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffcb63 0%,#ffb308 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffcb63 0%,#ffb308 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffcb63 0%,#ffb308 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcb63', endColorstr='#ffb308',GradientType=0 ); /* IE6-9 */
+}
+
+.login p.error {
+	background: #FFD3D3;
+	color: #f00;
+	border: 1px solid #f00;
+}
+
+.login button, .login input, .login p.error {
+
+	border-radius: 2px;
+	font-size: 1.2em;
+	padding: 10px;
+
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box; 
+}
+
+.info {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.info li {
+	float: left;
+	width: 50%;
+	margin-bottom: 12px;
+}
+
+.info li h3 {
+	font-size: 1em;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+}
+
+.info li p {
+	font-size: 1.75em;
+	font-weight: bold;
+	color: #ffb308;
+	margin: 0;
+	padding: 0;
+}
+
+.departArrive {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	width: 100%;
+	overflow: hidden;
+}
+
+.departArrive li {
+	width: 50%;
+	float: left;
+	margin-bottom: 12px;
+	color: #888;
+	font-style: italic;
+	font-size: .9em;
+}
+
+.departArrive li.arrives {
+	float: right;
+	width: auto;
+}
+
+.trips {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.trips > li {
+	cursor: pointer;
+	background: #004a9b;
+	border-top: 1px solid #3966a7;
+}
+
+.trips > li:active {
+	background: #3966a7;
+}
+
+.trips > li .passes .pass {
+	display: none;
+}
+
+.trips > li .passes {
+	margin: 0;
+}
+
+.trips > li .passes > li {
+	background: none;
+	border: 0;
+}
+
+.trips > li .passes > li .departArrive li {
+	margin: 0;
+	color: #fff;
+	font-style: normal;
+}
+
+.trips > li:first-of-type {
+	background: none;
+	cursor: default;
+}
+
+.trips > li:first-of-type .passes {
+	margin: 25px;
+}
+
+.trips > li:first-of-type .passes .pass {
+	display: block;
+}
+
+.trips > li:first-of-type .passes > li {
+	background: #fff;
+	border: 1px solid #ddd;
+}
+
+.trips > li:first-of-type .passes > li .departArrive li {
+	margin-bottom: 12px;
+	color: #888;
+	font-style: italic;
+}
+
+.passes {
+	list-style-type: none;
+	margin: 25px;
+	padding: 0;
+}
+
+.passes > li {
+	display: none;
+	background: #fff;
+	border: 1px solid #ddd;
+	padding: 12px;
+}
+
+.passes > li:first-of-type {
+	display: block;
+}
+
+.barcode {
+	text-align: center;
+}
+
+.barcode img {
+	width: 65%;
+}
